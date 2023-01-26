@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registration Page </title>
+        <link rel="stylesheet" href="Style/Styles1.css">
+
+
+        <script>
+            function Validation() {
+            var username1 =
+                document.forms.RegForm.username.value;
+            var firstname1 =
+                document.forms.RegForm.firstname.value;
+            var lastname1 =
+                document.forms.RegForm.lastname.value;
+            var phone1 =
+                document.forms.RegForm.phone.value;
+            var email1 =
+                document.forms.RegForm.email.value;
+            var password1 =
+                document.forms.RegForm.password.value;
+            var birthdate1 =
+                document.forms.RegForm.birthdate.value;
+
+                if (username1 == "") {
+                    alert("Please enter your username");
+                    return false;
+                }
+                if (firstname1 == "") {
+                    alert("Please enter your firstname");
+                    return false;
+                }
+                if (lastname1 == "") {
+                    alert("Please enter your lastname");
+                    return false;
+                }
+ 
+                if (phone1 == "") {
+                    alert("Please enter your phone number.");
+                    return false;
+                }
+                 
+                if (email1 == "") {
+                    alert("Please enter your e-mail address.");
+                    return false;
+                }
+                  
+                if (password1 == "") {
+                    alert("Please enter your password");
+                    return false;
+                }
+
+                if (birthdate1 == "") {
+                    alert("Please enter your birthdate.");
+                    return false;
+                }
+                alert("Registration Successful!");
+                return true;   
+        }
+
+        </script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+        <form id="RegForm" onsubmit="return Validation()" method="POST">
+            <h1 class="Yes1"> Registration Form </h1> 
+            <br>
+            <br>
+            <div class="form">
+            <div class="input_field">
+            <label for="username">Username: </label><input type="text" id="username" name="username" > 
+            </div> 
+            <div class="input_field">
+            <label for="firstname">First Name: </label><input type="text" id="firstname" name="firstname"> 
+            </div>
+            <div class="input_field">
+            <label for="lastname">Last Name: </label><input type="text" id="lastname" name="lastname" >
+            </div>
+            <div class="input_field">
+            <label for="phone">Mobile Number: </label><input type="tel" id="phone" name="phone" >
+            </div>
+            <div class="input_field">
+            <label for="email">Email: </label><input type="email" id="email" name="email" >
+            </div>
+            <div class="input_field">
+            <label for="password">Password: </label><input type="text" id="password" name="password" >
+            </div>
+            <div class="input_field">
+            <label for="birthdate">Birthday: </label><input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2022-12-31" >
+            </div>
+            <div class="input_field">
+            <input type="submit" value="Submit" name="submit" class="btn">
+            </div>
+            <div class="signup_link">
+                Already have an account? <a href="home.html">Signin</a>
+                </div>
+            </div>
+            </div>
+        </form>
+            </body>
+            </html>
+
+
+
+        
+
+

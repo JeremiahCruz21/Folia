@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>Plant page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Style/plant.css">
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button w3-wide">FOLIA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#plant" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PLANT</a>
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SIGNOUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#plant" onclick="w3_close()" class="w3-bar-item w3-button">PLANT</a>
+  <a href="#growth" onclick="w3_close()" class="w3-bar-item w3-button">GROWTH</a>
+</nav>
+
+<br>
+
+<br><Br><br>
+
+<div class="w3-row-padding">
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="Plant-Picture"></li>
+    <li class="w3-padding-16"><b>Temperature</b> 35%</li>
+    <li class="w3-padding-16"><b>Humidity</b> 95%</li>
+    <li class="w3-padding-16"><b>Height </b> 1m</li>
+    <li class="w3-padding-16"><b>Age </b> 7 days</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide"> Cabbage</h2>
+      <span class="w3-opacity"> Brassica oleracea var. capitata</span>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  
+  <ul class="w3-ul w3-border w3-center">
+    <li class="w3-light-grey w3-padding-24">
+      <button class="w3-button w3-green w3-padding-large">+</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="Plant-Picture2"></li>
+    <li class="w3-padding-16"><b>Temperature</b> 35%</li>
+    <li class="w3-padding-16"><b>Humidity</b> 95%</li>
+    <li class="w3-padding-16"><b>Height </b> 1m</li>
+    <li class="w3-padding-16"><b>Age </b> 7 days</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">Spinach</h2>
+      <span class="w3-opacity"> Spinacia oleracea</span>
+    </li>
+  </ul>
+</div>
+
+</div>
+
+</body>
+</html> 
